@@ -4,7 +4,7 @@ form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
   e.preventDefault();
-  const { email, password } = e.currentTarget.elements["email"];
+  const { email, password } = e.currentTarget.elements;
   if (!email.value || !password.value) {
     alert("Не всі поля заповненні");
     return;
